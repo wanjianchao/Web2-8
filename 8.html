@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+body{
+  background: #F5FFFA;
+}
+	* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.clear:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+}
+.container {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+}
+.logo{
+  width: 200px;
+  height: 100px;
+  float: left;
+}
+#denglu{
+  float:right;
+  margin-top: 30px;
+}
+#zhuce{
+  margin-right:40px;
+  float:right;
+  margin-top: 30px;
+}
+.form {
+    float: left;
+    margin-top: 31px;
+    margin-left: 100px;
+
+}
+.l1{
+	float: left;
+	width: 332px;
+	height: 12px;
+  padding: 13px;
+	border: 1px rgba(0,163,255,1) solid;
+}
+.l2{
+   float: left;
+   width:50px;
+   height:40px;
+   border: 1px rgba(0,163,255,1) solid;
+   background:rgba(0,163,255,1) url('images/000.png') no-repeat center center;
+}
+.form1{
+	display: none;
+  position:absolute;
+  left:620px;
+  top:300px;
+  width: 270px;
+  height: 250px;
+  border: 2px rgba(128,128,128,1) solid;
+  background-color: turquoise;
+}
+.form2{
+	display: none;
+  position:absolute;
+  left:620px;
+  top:300px;
+  width: 270px;
+  height: 250px;
+  border: 2px rgba(128,128,128,1) solid;
+  background-color: turquoise;
+}
+.form3{
+	display: none;
+  position:absolute;
+  left:620px;
+  top:300px;
+  width: 270px;
+  height: 250px;
+  border: 2px rgba(128,128,128,1) solid;
+  background-color: #99FFFF;
+}
+#w1{
+  border: 1px green solid;
+  width:230px ;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+#w2{
+  border: 1px green solid;
+  width:230px ;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+#w3{
+	width:230px;
+  height:35px;
+  margin-left: 20px;
+  margin-top: 25px;
+  border: 1px black solid;
+  background-color: rgba(128,128,128,0.2);
+}
+#w4{
+	width:230px;
+  height:35px;
+  margin-left: 20px;
+  margin-top: 25px;
+  border: 1px black solid;
+  background-color: rgba(128,128,128,0.2);
+}
+#w11{
+  border: 1px green solid;
+  width:230px ;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+#w22{
+  border: 1px green solid;
+  width:230px ;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.wenben3{
+  height:50px;
+}
+.container1 {
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    background-color:white;
+}
+.nav li{
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  float: left;
+}
+.nav a:hover{
+  font-size: 20px;
+  color: orange;
+}
+.container2 {
+  width: 1200px;
+  height: 400px;
+  margin: 0 auto;
+}
+.banner{
+  width: 1200px;
+  height: 400px;
+}
+.container4 {
+  width: 1200px;
+  height: 50px;
+  margin: 0 auto;
+  background-color:white;
+}
+.m4{
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+}
+.container3 {
+  display: block;
+  width: 1200px;
+  height: 230px;
+  margin: 0 auto;
+}
+.container31 {
+  display: block;
+  width: 1200px;
+  height: 230px;
+  margin: 0 auto;
+}
+.m0{
+  position: relative;
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px ;
+  margin-right: 10px;
+}
+.m1{
+  position: absolute;
+  top: 140px;
+  width: 220px;
+  height: 60px;
+  background-color: rgba(211,211,211,0.5);
+}
+.m2{
+  width: 220px;
+  height: 30px;
+  color: #050505FF;
+  font-size: 14px;
+
+}
+.m3{
+  width: 220px;
+  height: 30px;
+  color: #050505FF;
+  font-size: 13px;
+
+}
+.x1{
+  color: red;
+  font-size: 20px;
+}
+.container5 {
+  width: 1200px;
+  height: 230px;
+  margin: 0 auto;
+}
+.m8{
+  float: left;
+  position: relative;
+}
+.m5{
+  width: 220px;
+  height: 170px;
+  margin-top: 10px;
+  margin-left: 10px ;
+  margin-right: 10px;
+}
+.m6{
+  position: absolute;
+  top: 180px;
+  left: 10px;
+  width: 220px;
+  height: 40px;
+  background-color: rgba(211,211,211,0.5);
+}
+.m7{
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+}
+.container6 {
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: black;
+}
+.m9{
+  color: white;
+  font-size: 13px;
+  text-align: center;
+  line-height: 28px;
+}
+.container8{
+  width: 1200px;  
+  height: 200px;
+  margin: 0 auto;
+  background-color: rgba(128,128,128,0.8)
+}
+.k1{
+  float: left;
+  margin-top:30px ;
+  margin-left: 200px;
+} 
+.k2{
+  float: left;
+  margin-top:30px ;
+  margin-left: 50px;
+} 
+.k3{
+  float: left;
+  margin-top:30px ;
+  margin-left:50px;
+}
+.k4{
+  float: left;
+  margin-top:30px ;
+  margin-left:50px;
+}      
+.q2{
+  font-size: 18px;
+  font-family: YouYuan;
+  color: white;
+
+}
+.q4 a{
+  font-size: 12px;
+  color: white;
+}
+.weixin{
+  width: 100px;
+  height: 100px;
+  padding-top: 10px;
+}
+.z1{
+  font-size: 11px;
+}
+.r1{
+  float: left;
+  width: 300px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+.r2{
+  font-size: 18px;
+  font-family: YouYuan;
+  color: white;
+  margin-top: 2px;
+}
+.r3{
+  font-size: 20px;
+  color: orange;
+}
+.r4{
+  font-size: 12px;
+  color: white;
+}
+.lunbo{
+	width: 1200px;
+	height: 450px;
+	margin:0 auto;
+}
+.lunbo img{
+	width: 100%;
+	height:100%;
+}
+.huadong {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 50px;
+}
+#wenzi {
+	color: black;
+	font-size:20px;
+    width: 600px;
+}
+.toubu{
+  text-align:center;
+  margin: auto;
+  height:20px;
+  background-color: #F5FFFA;
+}
+	</style>
+</head>
+<body>
+  <form class="form1">
+    <input type="text" placeholder="用户名" id="w1" /><br/>
+    <input type="text" placeholder="密码" id="w2" /><br/>
+    <input type="button" value="立即注册" name="sub"  id="w4"/>
+  </form>
+  <div class="form2">
+    <p class="wenben3"></p>       
+    <p class="wenben3"></p>       
+    <p class="wenben3"></p> 
+  </div>
+  <form class="form3">
+    <input type="text" placeholder="请输入用户名" id="w11" /><br/>
+    <input type="text" placeholder="请输入密码" id="w22" /><br/>
+    <input type="button" value="立即登录" name="sub"  id="w3"/>
+  </form>
+  <div class="toubu">
+    Welcome friends from all over the world to visit Handan!Welcome to Handan!
+  </div>
+	<div class="header">
+		<div class="container clear">
+      <img src="images/logo1.jpg" alt="logo图" class="logo" />		    	
+      <form class="form clear">       
+        <input type="text" placeholder="请输入关键字" class="l1" />
+        <input type="button" class="l2" />
+      </form>
+      <img src="images/denglu.jpg" alt="登陆图" id="denglu" />
+      <img src="images/zhuce.jpg" alt="注册图" id="zhuce" />      
+    </div>
+  </div>
+    <div class="nav">
+    	<div class="container1">
+    		<ul class="clear">
+                <li><a href="#" alt="">网站首页</a></li>
+                <li><a href="#" alt="">关于我们</a></li>
+                <li><a href="#" alt="">走进邯郸</a></li>
+                <li><a href="#" alt="">特色景点</a></li>
+                <li><a href="#" alt="">特色美食</a></li>
+                <li><a href="#" alt="">联系我们</a></li>
+            </ul>
+      </div>
+    </div>
+    <div>
+    	<div class="lunbo">
+			<img id="lunbo_img" src="images/img1.jpg" >
+		</div>
+		<div class="huadong">
+			<div id="wenzi">
+				欢迎来到“邯郸旅游”，这里有最全面的服务，最便宜的价格！
+			</div>
+		</div>
+    </div>
+    <div class="container4">
+    	<p class="m4">特色景点</p>
+    </div>
+    <div>
+    	<div class="container3 clear">
+    		<div class="m0">
+    			<img src="images/01.jpg" alt="" />
+    			<div class="m1">
+    				<p class="m2">广府古城 AAAAA级景区</p>
+    				<p class="m3">河北.永年      携程价¥<span class="x1">120</span>起</p>
+    			</div>
+    		</div>
+    		<div class="m0">
+    			<img src="images/02.jpg" alt="" />
+    			<div class="m1">
+    				<p class="m2">京娘湖 AAAA级景区</p>
+    				<p class="m3">河北.武安      携程价¥<span class="x1">170</span>起</p>
+    			</div>
+    		</div>
+    		<div class="m0">
+    			<img src="images/03.jpg" alt="" />
+    			<div class="m1">
+    				<p class="m2">响堂山石窟区 AAAAA级景区</p>
+    				<p class="m3">河北.峰峰      携程价¥<span class="x1">100</span>起</p>
+    			</div>
+    		</div>
+    		<div class="m0">
+    			<img src="images/04.jpg" alt="" />
+    			<div class="m1">
+    				<p class="m2">娲皇宫 AAAAA级景区</p>
+    				<p class="m3">河北.涉县      携程价¥<span class="x1">150</span>起</p>
+    			</div>
+    		</div>
+    		<div class="m0">
+    			<img src="images/05.jpg" alt="" />
+    			<div class="m1">
+    				<p class="m2">丛台公园 AAAAA级景区</p>
+    				<p class="m3">河北.邯郸     携程价¥<span class="x1">120</span>起</p>
+    			</div>
+    		</div>
+      </div>
+      <div class="container31 clear">
+    		<div class="m0">
+    			<img src="images/11.jpg" alt="" />
+    			<div class="m1">
+    				<p class="m2">广府古城 AAAAA级景区</p>
+    				<p class="m3">河北.永年      携程价¥<span class="x1">120</span>起</p>
+    			</div>
+    		</div>
+    		<div class="m0">
+    			<img src="images/12.jpg" alt="" />
+    			<div class="m1">
+    				<p class="m2">京娘湖 AAAA级景区</p>
+    				<p class="m3">河北.武安      携程价¥<span class="x1">170</span>起</p>
+    			</div>
+    		</div>
+    		<div class="m0">
+    			<img src="images/13.jpg" alt="" />
+    			<div class="m1">
+    				<p class="m2">响堂山石窟区 AAAAA级景区</p>
+    				<p class="m3">河北.峰峰      携程价¥<span class="x1">100</span>起</p>
+    			</div>
+    		</div>
+    		<div class="m0">
+    			<img src="images/14.jpg" alt="" />
+    			<div class="m1">
+    				<p class="m2">娲皇宫 AAAAA级景区</p>
+    				<p class="m3">河北.涉县      携程价¥<span class="x1">150</span>起</p>
+    			</div>
+    		</div>
+    		<div class="m0">
+    			<img src="images/15.jpg" alt="" />
+    			<div class="m1">
+    				<p class="m2">丛台公园 AAAAA级景区</p>
+    				<p class="m3">河北.邯郸     携程价¥<span class="x1">120</span>起</p>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <div>  	
+    </div>
+    <div class="container4">
+    	<p class="m4">特色美食</p>
+    </div>
+    <div>
+    	<div class="container5 clear">
+    		<div class="m8">
+    		    <img src="images/31.jpg" alt=""  class="m5"/>
+    		    <div class="m6">
+    		    	<p class="m7">二毛烧鸡</p>
+    		    </div>
+    	    </div>
+    	    <div class="m8">
+    		    <img src="images/32.jpg" alt="" class="m5" />
+    		    <div class="m6">
+    		    	<p class="m7">马头天福酥鱼</p>
+    		    </div>
+    	    </div>
+    	    <div class="m8">
+    		    <img src="images/33.jpg" alt="" class="m5" />
+    		    <div class="m6">
+    		    	<p class="m7">永年驴肉香肠</p>
+    		    </div>
+    	    </div>
+    	    <div class="m8">
+    		    <img src="images/34.jpg" alt="" class="m5" />
+    		    <div class="m6">
+    		    	<p class="m7">磁县胖妮熏鸡</p>
+    		    </div>
+    	    </div>
+    	    <div class="m8">
+    		    <img src="images/35.jpg" alt="" class="m5" />
+    		    <div class="m6">
+    		    	<p class="m7">永年酥鱼</p>
+    		    </div>
+    	    </div>
+    	</div>
+    </div>
+    <div class="container8">
+        <div class="r1">
+          <p class="r2">为什么选择邯郸旅游</p>
+          <p class="r3">❤放心的服务</p>
+          <p class="r4">领先的服务标准 独特的保障体系</p>
+          <p class="r3">❤放心的价格</p>
+          <p class="r4">具竞争力的价格 无任何隐形费用</p>
+        </div>			
+        <div class="k1">
+            <p class="q2">关于邯郸旅游</p>
+            <ul class="q3">
+              <li class="q4"><a href="#">邯旅简介</a></li>
+              <li class="q4"><a href="#">可信网站</a></li>
+              <li class="q4"><a href="#">网站地图</a></li>
+              <li class="q4"><a href="#">法律声明</a></li>
+              <li class="q4"><a href="#">业务资质</a></li>
+              <li class="q4"><a href="#">用户协议和隐私条款</a></li>
+            </ul>
+        </div>
+        <div class="k2">
+            <p class="q2">加盟合作</p>
+            <ul class="q3">
+              <li class="q4"><a href="#">合作加盟</a></li>
+              <li class="q4"><a href="#">商旅合作</a></li>
+              <li class="q4"><a href="#">旅游保险</a></li>
+              <li class="q4"><a href="#">网站联盟</a></li>
+              <li class="q4"><a href="#">门票合作</a></li>
+            </ul>
+        </div>
+        <div class="k3">
+            <p class="q2">联系我们</p>
+            <ul class="q3">
+                <li class="q4"><a href="#">联系我们</a></li>
+                <li class="q4"><a href="#">投诉建议</a></li>
+                <li class="q4"><a href="#">友情链接</a></li>
+            </ul>
+        </div>
+        <div class="k4">
+        	<p class="q2">微信公众号</p>
+        	<img src="images/41.jpg" alt="" / class="weixin">
+        	<p class="z1"> 扫一扫 领取旅行福利</p>
+        </div>
+
+    </div>
+    <div class="container6">
+    	<p class="m9">2020~2025 邯郸旅游 邯郸旅游有限公司版权所有 冀ICP备88888888-8号</p>
+    	<p class="m9">经营许可证编号：合字B2-20180016      备案序号：冀ICP备09033604号-29 冀公网安备32059002001003号     旅行社业务许可证：L-JS-CJ00070</p>
+    	<p class="m9">旅游网站诚信建设承诺书     旅游网站守法诚信责任状     违规失信举报热线：4007-777-777转8</p>
+    </div>	
+</body>
+<script>
+	//banner图切换
+	var index = 1;
+	  function lunbo(){
+		  index ++ ;
+		  //判断index是否大于3
+		  if(index > 4){
+			  index = 1;
+		  }
+		  //获取img对象
+		  var img = document.getElementById("lunbo_img");
+      img.src = "images/img"+index+".jpg";
+	  }
+	  //2.定义定时器
+    setInterval(lunbo,2000);
+        
+  //注册登录效果
+  var w11 = document.getElementById("w11");
+	var w22 = document.getElementById("w22");
+	var w1 = document.getElementById("w1");
+	var w2 = document.getElementById("w2");
+	var w3 = document.getElementById("w3");
+	var w4 = document.getElementById("w4");
+	var wenben3 = document.getElementsByClassName("wenben3");
+	var form1 = document.getElementsByClassName("form1");
+  var form2 = document.getElementsByClassName("form2");
+  var form3 = document.getElementsByClassName("form3");
+	w4.onclick = function(){  
+        if(w1.value =="" || w2.value == ""){
+		    alert("用户名或密码不能为空！");	
+		}
+		else{
+			form1[0].style.display="none";
+		    form2[0].style.display="block";
+            wenben3[0].innerHTML ="注册成功，请返回登陆!";
+            wenben3[1].innerHTML ="用户名：" + w1.value;
+            wenben3[2].innerHTML ="密码：" + w2.value;
+		}
+  }
+  var zhuce = document.getElementById("zhuce");
+  zhuce.onclick=function(){
+    form1[0].style.display="block";
+  }
+  var denglu = document.getElementById("denglu");
+  denglu.onclick=function(){
+    form3[0].style.display="block";
+  }
+  w3.onclick = function(){  
+        if(w11.value =="" || w22.value == ""){
+		    alert("用户名或密码不能为空！");	
+		}
+		else{
+			form3[0].style.display="none";
+		    form2[0].style.display="block";
+            wenben3[0].innerHTML ="登录成功!";
+		}
+	}
+	//文字滑动效果
+	var wenzi = document.getElementById("wenzi");
+    wenzi.style.marginLeft = "0";
+    var intervalId = setInterval(function(){
+        var marginLeft = parseInt(wenzi.style.marginLeft);
+        if(marginLeft == 800) {
+            wenzi.style.marginLeft = "0";
+            marginLeft = "0";
+        }
+        wenzi.style.marginLeft = (marginLeft + 1) + "px";
+    }, 10);
+    //搜索效果
+    var sousuo = document.getElementsByClassName("l2");
+    sousuo[0].onclick = function(){
+      window.location.href= "http://baidu.com";
+    }
+  
+  </script>
+</html>
